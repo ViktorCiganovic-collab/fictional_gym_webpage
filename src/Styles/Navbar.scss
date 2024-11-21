@@ -1,0 +1,49 @@
+@import './App.scss';
+
+.nav {
+background-color: var(--dark);
+}
+
+.logo {
+margin-left: 15px;
+}
+
+
+.nav-link {
+    position: relative; 
+    text-decoration: none !important;
+    margin: 10px 20px;
+  
+    &:hover {
+      color: var(
+        --warning
+      ) !important; 
+    }
+  
+    &::before {
+      content: ">";
+      position: absolute;
+      left: -0.5rem; 
+      top: 50%; 
+      transform: translateY(-50%); 
+      opacity: 0; 
+      transition: opacity 0.2s ease, left 0.2s ease; 
+      color: var(--warning) !important;
+    }
+  
+    &:hover::before {
+      opacity: 1; 
+      left: -1rem; 
+    }
+  }
+
+  .nav {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .links {
+    margin-left: auto !important;
+   
+  
+  }

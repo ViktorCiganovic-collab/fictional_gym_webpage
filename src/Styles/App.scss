@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+// Define Sass variables
+$primary: #14385F;
+$primary-subtle:#74B7FF;
+$secondary: #4A433E;
+$secondary-subtle:#E4D7CE;
+$success: #4E4D29;
+$success-subtle:#DBD876;
+$info: #0d676a;
+$info-subtle: #a5f5f7;
+$warning: #f8e288; 
+$danger: #8F1111; 
+$danger-subtle: #F89090; 
+$light:#E9EAEB;
+$dark: #222; 
+
+:root {
+  --primary: #{$primary};
+  --primary-subtle: #{$primary-subtle};
+
+  --secondary: #{$secondary};
+   --secondary-subtle: #{$secondary-subtle};
+  --success: #{$success};
+  --success-subtle: #{$success-subtle};
+  --info:#{$info};
+  --info-subtle:#{$info-subtle};
+  --warning: #{$warning};
+  --danger: #{$danger};
+  --danger-subtle: #{$danger-subtle};
+  --light: #{$light};
+  --dark: #{$dark};
+  
+}
+
+// Use Sass variables
+$font-family-base: 'Quicksand', sans-serif;
+$headings-font-family: 'Quicksand', sans-serif;
+$font-size-base: 1rem;
+
+// Apply styles using Sass variables
+body {
+  background-color: $dark;  // Using Sass variable for background
+  color: $light;  // Using Sass variable for text color
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+}
+
+// Example usage of CSS variables
+h1 {
+  color: var(--primary-color);  // Using CSS custom property (variable) for color
+  font-size: var(--font-size-large);  // Using CSS custom property for font size
+}
+
+button {
+  background-color: var(--primary-color);  // Using CSS variable for button bg
+  border-radius: var(--border-radius);  // Using CSS variable for border radius
+  font-size: var(--font-size-small);  // Using CSS variable for small font size
+}
+
+.card {
+  border-color: var(--secondary-color);  // Using another CSS variable for border color
+}
