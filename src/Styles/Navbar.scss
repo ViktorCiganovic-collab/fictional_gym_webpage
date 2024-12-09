@@ -2,6 +2,15 @@
 
 .nav {
 background-color: var(--dark);
+max-width: 1440px;
+margin: 0 auto;
+//max-width: 1440px;
+}
+
+#brandLogo {
+  height: 50%;
+  width: 60px;
+  border-radius: 15px;
 }
 
 .logo {
@@ -37,13 +46,13 @@ margin-left: 15px;
     }
   }
 
-  .nav {
-    display: flex !important;
-    justify-content: space-between !important;
+  .links {
+    margin-left: auto !important;   
+  
   }
 
-  .links {
-    margin-left: auto !important;
-   
-  
+  .shopLink {
+    border: 1px solid var(--warning);
+    color: var(--warning);
+    border-radius: 15px;
   }

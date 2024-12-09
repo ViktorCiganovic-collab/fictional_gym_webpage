@@ -3,10 +3,11 @@
 
 #primary-section {
     margin: 0 auto !important;
-    background: url('../Images/pexels-823sl-2294361\ \(1\).jpg');
+    background: url('../Images/pexels-cottonbro-4752861 (1).jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -16,5 +17,11 @@
     font-size: 50px;    
 }
 
+@media (max-width: 700px) {
+
+    #primary-section {
+        background-attachment: scroll;
+        }
+}
 
 

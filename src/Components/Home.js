@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Home.scss';
 
-const Home = () => {
+const Herosection = () => {
   return (
     <div id="herosection">
         
@@ -14,4 +14,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Herosection

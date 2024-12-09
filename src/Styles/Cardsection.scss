@@ -1,0 +1,10 @@
+
+@import './App.scss';
+
+.card-component {
+    transition: 0.7s;
+}
+
+.card-component:hover {
+    transform: scale(1.05);
+}
